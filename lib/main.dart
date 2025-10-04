@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import './widgets/card_hero.dart';
+import './models/info_model.dart';
+import './widgets/custom_list_tile.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,6 +12,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    InfoModel myModel = InfoModel(
+      title: "first title",
+      subtitle: "fir subtitle",
+      icon: Icons.add_ic_call_rounded,
+    );
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -18,7 +26,12 @@ class MyApp extends StatelessWidget {
           title: Text("Personal Card"),
           centerTitle: true,
         ),
-        body: Column(children: [CardHero()]),
+        body: Column(
+          children: [
+            CardHero(), //
+            CustomListTile(infoModel: myModel),
+          ],
+        ),
       ),
     );
   }
