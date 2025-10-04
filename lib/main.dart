@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './widgets/card_hero.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,13 +11,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.amber,
-          title: Text("Personal Info"),
+          title: Text("Personal Card"),
           centerTitle: true,
         ),
-        body: Text("Ayman Salah"),
+        body: CardHero(),
       ),
     );
   }
