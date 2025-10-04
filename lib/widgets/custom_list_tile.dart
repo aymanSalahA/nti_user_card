@@ -8,13 +8,16 @@ class CustomListTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Icon(infoModel.icon),
-        const SizedBox(width: 16),
-        Expanded(child: Text(infoModel.title)),
-        Icon(Icons.arrow_forward_ios, size: 16),
-      ],
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: Row(
+        children: [
+          Icon(infoModel.icon),
+          const SizedBox(width: 24),
+          Expanded(child: Text(infoModel.title)),
+          Icon(Icons.arrow_forward_ios, size: 16),
+        ],
+      ),
     );
   }
 }
