@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
           title: Text("Personal Card"),
           centerTitle: true,
         ),
-        body: CardHero(),
+        body: Column(children: [CardHero()]),
       ),
     );
   }
