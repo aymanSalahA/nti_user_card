@@ -5,14 +5,29 @@ class CardHero extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
-      children: [
-        CircleAvatar(
-          backgroundImage: AssetImage("assets/images/profile.png"),
-        ), //
-        Column(children: [Text("Big Text title"), Text("Small text Subtitle")]),
-      ],
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          CircleAvatar(
+            backgroundImage: AssetImage("assets/images/profile.png"),
+            radius: 40,
+          ), //
+          SizedBox(
+            height: 60,
+            child: Column(
+              children: [
+                Text(
+                  "Ayman Salah",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                Text("ayman@gmail.com"),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
