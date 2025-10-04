@@ -9,10 +9,10 @@ class CustomListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         Icon(infoModel.icon),
-        Text(infoModel.title),
+        const SizedBox(width: 16),
+        Expanded(child: Text(infoModel.title)),
         Icon(Icons.arrow_forward_ios, size: 16),
       ],
     );
