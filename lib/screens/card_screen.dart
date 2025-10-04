@@ -7,7 +7,7 @@ class CardScreen extends StatelessWidget {
 
   static List<InfoModel> supposeJson = [
     InfoModel(
-      title: "xx title",
+      title: "title",
       subtitle: "fir subtitle",
       icon: Icons.add_ic_call_rounded,
     ),
