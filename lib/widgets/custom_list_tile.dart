@@ -12,7 +12,6 @@ class CustomListTile extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         Icon(infoModel.icon),
-        const SizedBox(width: 16),
         Text(infoModel.title),
         Icon(Icons.arrow_forward_ios, size: 16),
       ],
