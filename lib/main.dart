@@ -44,9 +44,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
+          leading: Icon(Icons.arrow_back_ios),
           backgroundColor: Colors.amber,
           title: Text("Personal Card"),
           centerTitle: true,
+          actions: [Icon(Icons.settings_input_antenna_rounded)],
         ),
         body: Column(
           children: [
